@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Connection</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+    <h1>Connect to Facebook</h1>
+    <p>Click the button below to connect your Facebook account.</p>
+    <a href="/facebook/auth/facebook" class="facebook-connect-button">Connect with Facebook</a>
+    <p><a href="/dashboard">Back to Dashboard</a></p>
+    <script src="/public/script.js"></script>
+    <script>
+    // Example: Display a success message after connecting to Facebook
+    document.querySelector('.facebook-connect-button').addEventListener('click', function () {
+        // Simulate a successful connection for demonstration purposes
+        showSuccessMessage('Connected to Facebook successfully!');
+    });
+</script>
+</body>
+</html>
