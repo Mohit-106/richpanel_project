@@ -15,7 +15,7 @@ function handleLogout() {
     })
     .then((response) => {
         if (response.ok) {
-            window.location.href = '/';
+            window.location.href = '/register.js';
         } else {
         }
     })

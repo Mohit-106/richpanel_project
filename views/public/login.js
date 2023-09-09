@@ -20,9 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((response) => {
           if (response.ok) {
             alert("Signup successful!");
-            window.location.href = "http://127.0.0.1:5500/views/index.html"; // Change this to the actual home page URL
+            window.location.href = "http://127.0.0.1:5500/views/dashboard.html"; 
           } else {
-            // Handle login failure (e.g., display an error message)
             alert("Login failed. Please check your email and password.");
             throw new Error("Login failed.");
           }

@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use("/api/v1/auth", authRouter);
 let port = process.env.PORT || 3000;
 app.listen(port, function () {
-    console.log("server started at port 3000");
+    console.log("Server Started at port 3000");
 })
 
 

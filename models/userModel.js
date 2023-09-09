@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 mongoose
     .connect(secrets.DB_LINK)
     .then(function () {
-        console.log("connected");
+        console.log("Connected to MongoDB Database");
     })
     .catch(function (err) {
         console.log("error", err);
