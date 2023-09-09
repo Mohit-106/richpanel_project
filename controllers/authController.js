@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const secrets = require("../secret");
+const secrets = require("../secrets/secret");
 const bcrypt = require('bcrypt');
 const FooduserModel = require("../models/userModel");
 

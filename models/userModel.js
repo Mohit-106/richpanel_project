@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-let secrets = require("../secret");
+let secrets = require("../secrets/secret");
 const bcrypt = require('bcrypt');
 
 mongoose
