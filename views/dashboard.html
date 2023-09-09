@@ -10,11 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-
 <body>
     <div class="container">
-        <!-- Left Sidebar -->
-
         <nav class="vertical-nav">
             <ul>
                 <!-- Vertical Navbar -->
@@ -38,9 +35,21 @@
                 </div>
 
                 <ul>
-                    <li>Utkarsh</li>
-                    <li>Areeb</li>
-                    <li>Nitin</li>
+                    <li>
+                        <div class="conv"> 
+                            <i class="fa fa-user-circle-o fa-1x"></i>
+                            <div class="cn" style="margin-top: 0px;">Utkarsh</div>
+                    </li>
+                    <li>
+                        <div class="conv"> 
+                            <i class="fa fa-user-circle-o fa-1x"></i>
+                            <div class="cn" style="margin-top: 0px;">Areeb</div>
+                    </li>
+                    <li>
+                        <div class="conv"> 
+                            <i class="fa fa-user-circle-o fa-1x"></i>
+                            <div class="cn" style="margin-top: 0px;">Mohit</div>
+                    </li> 
                 </ul>
             </div>
         </div>
@@ -48,7 +57,7 @@
         <div class="main-chat">
             <div class="chat-header">
                 <img src="images/profile.jpg" alt="Friend Profile Picture">
-                <h5>Nitin</h5>
+                <h5>Mohit</h5>
             </div>
             <div class="chat-messages">
                 <div class="outer-container">
@@ -81,9 +90,9 @@
         </div>
         <div class="user-profile">
             <img src="images/profile.jpg" alt="Profile Picture">
-            <h2>Nitin</h2>
+            <h3 style="margin-bottom: 4px;">Mohit</h3>
             <h5>
-                <p style="color: #adadad; margin-bottom: 1rem;"><i class="fas fa-circle"></i> Online</p>
+                <p style="color: #adadad; margin-bottom: 1rem;"><i style="color: rgb(162, 223, 101);" class="fas fa-circle"></i> Online</p>
             </h5>
             <div class="button-container">
                 <button class="icon-button">
@@ -96,18 +105,29 @@
             <div class="customer-container">
                 <h2>Customer Details</h2>
                 <ul>
-                  <li><strong>Email:</strong><span style="margin-left: 40px">nitn@nith.ac.in</span></li>
-                  <li><strong>Name:</strong><span style="margin-left: 40px">Nitin Sohal</span></li>
+                  <li><strong>Email:</strong><span style="margin-left: 40px">20@nith.ac.in</span></li>
+                  <li><strong>Name:</strong><span style="margin-left: 40px">Mohit Kumar</span></li>
                   <li><strong>Mobile:</strong><span style="margin-left: 40px">7018698582</span></li>
                 </ul>
                 <a href="#" class="view-more">View More Details</a>
               </div>
+              <button id="redirectButton" class="icon-button" style="margin-top: 1rem">
+                <i class="fas fa-sign-out"></i> Log Out
+            </button>
         </div>
 
     </div>
+    <script>
+        var button = document.getElementById("redirectButton");
+    
+        button.addEventListener("click", function() {
+            window.location.href = "register.html";
+        });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="public/responses.js"></script>
     <script src="public/chat.js"></script>
+  
 </body>
 
 </html>

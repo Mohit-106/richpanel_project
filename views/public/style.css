@@ -5,31 +5,30 @@ body {
     background-color: #f0f0f0;
   }
 
-/* Button styles */
 .icon-button {
     display: inline-block;
     background-color: transparent;
-    border: 1px solid #ccc; /* Grey border */
+    border: 1px solid #ccc; 
     border-radius: 5px;
-    padding: 5px 10px; /* Adjust padding for button size */
-    margin-right: 10px; /* Add spacing between buttons */
-    font-size: 14px; /* Adjust font size */
+    padding: 5px 10px; 
+    margin-right: 10px; 
+    font-size: 14px; 
     cursor: pointer;
-    color: #555; /* Text color */
+    color: #555; 
   }
   
   .icon-button i {
-    margin-right: 5px; /* Add spacing between icon and text */
+    margin-right: 5px;
   }
 
-  /* Container styles */
+ 
 .customer-container {
     background-color: #ffffff;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     color: #555;
-    width: 250px; /* Adjust the width as needed */
+    width: 250px; 
     margin-left: 1rem;
     margin-top: 1rem;
   }
@@ -50,7 +49,7 @@ body {
     margin-bottom: 5px;
   }
   
-  /* "View More" link styles */
+
   .view-more {
     display: block;
     text-align: center;

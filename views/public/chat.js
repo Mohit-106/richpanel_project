@@ -35,9 +35,7 @@ function getTime() {
 function firstBotMessage() {
     let firstMessage = "How's it going?"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
-
     let time = getTime();
-
     $("#chat-timestamp").append(time);
     document.getElementById("userInput").scrollIntoView(false);
 }
@@ -52,17 +50,49 @@ function getHardResponse(userText) {
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
+let count=0;
+
 function getResponse() {
     let userText = $("#textInput").val();
-    if (userText == "") {
-        userText = "I love Code Palace!";
+    if (userText == "" && count==0) {
+        userText = "Where is my order?";
+        count++
+    }else if(userText == "" && count==1){
+        userText = "How do I track my package?";
+        count++
+    }else if(userText == "" && count==2){
+        userText = "Can I change my shipping address?";
+        count++
+    }else if(userText == "" && count==3){
+        userText = "What are the shipping options and delivery times?";
+        count++
+    }else if(userText == "" && count==4){
+        userText = "How can I cancel an order?";
+        count++
+    }else if(userText == "" && count==5){
+        userText = "What is Amazon Prime and its benefits?";
+        count++
     }
-    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+    else if(userText == "" && count==6){
+        userText = "How do I return or exchange a product?";
+        count++
+    }
+    else if(userText == "" && count==7){
+        userText = "What is the status of my refund?";
+        count++
+    }
+    else if(userText == "" && count==8){
+        userText = "Goodbye";
+        count++
+    }
+    else if(count>8){
+        count=0;
+    }
 
+    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
     $("#textInput").val("");
     $("#chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
-
     setTimeout(() => {
         getHardResponse(userText);
     }, 1000)
@@ -71,7 +101,6 @@ function getResponse() {
 
 function buttonSendText(sampleText) {
     let userHtml = '<p class="userText"><span>' + sampleText + '</span></p>';
-
     $("#textInput").val("");
     $("#chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
